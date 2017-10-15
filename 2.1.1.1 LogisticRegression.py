@@ -33,7 +33,7 @@ print(pd.value_counts(y_test))
 # 标准化数据，均值0，方差1
 ss = StandardScaler()
 X_train = ss.fit_transform(X_train)
-X_test = ss.fit_transform(X_test)
+X_test = ss.transform(X_test)
 
 # 计时开始
 starttime = datetime.datetime.now()
